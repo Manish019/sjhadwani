@@ -240,9 +240,9 @@ button[type=submit] {
 #sticky-social a[class*="instagram"]:hover,
 #sticky-social a[class*="instagram"] span { background: #d43a87		; }  
 
-#sticky-social a[class*="linkedin"],
-#sticky-social a[class*="linkedin"]:hover,
-#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+#sticky-social a[class*="whatsapp"],
+#sticky-social a[class*="whatsapp"]:hover,
+#sticky-social a[class*="whatsapp"] span { background: #2fb42f; }  
 
 
 
@@ -250,7 +250,10 @@ button[type=submit] {
 #sticky-social a[class*="youtube"]:hover,
 #sticky-social a[class*="youtube"] span { background: #ff1c00; }
 
-
+.buttons{
+  border: 2px solid #9f8054;
+  padding: 10px;
+}
 
 /* ACCORDION */
 .accordion {
@@ -3645,13 +3648,27 @@ button[type=submit] {
 	.footer-bar .inner figure {margin-bottom:40px; width:60px}
 }
 
-@media (max-width:991px) and (min-width:800px) {
+@media (max-width:991px) and (min-width:768px) {
 	.footer-bar .col-lg-6 {flex:0 0 50%; max-width:50%}
+  #sticky-social {
+    
+    top: 350px;
+    
+}
+.slider-navigation {
+   
+    bottom: 80px;
+    right: 25%;
+    
+}
 }
 
 @media (max-width:600px) {
 	.about.facilities, .facilities.partners {padding:20px 0 50px}
 	.logos {padding-bottom:70px}
+  #sticky-social {
+    top: 300px;
+}
 }
 
 @media (max-width:480px) {
