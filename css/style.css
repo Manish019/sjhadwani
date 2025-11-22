@@ -3719,6 +3719,12 @@ textarea{
       margin-top: 20px !important;
 
 }
+.slider-navigation {
+   
+    bottom: 70px;
+    right: 5%;
+   
+}
 }
 
 @media (max-width:480px) {
