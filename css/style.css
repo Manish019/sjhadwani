@@ -3676,6 +3676,14 @@ button[type=submit] {
     right: 25%;
     
 }
+input[type=text] {
+   
+    border: 1px solid #b5b0b0 !important;
+   
+}
+textarea{
+   border: 1px solid #b5b0b0 !important;
+}
 }
 
 @media (max-width:600px) {
