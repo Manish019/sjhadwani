@@ -230,29 +230,44 @@ button[type=submit] {
 }
 #sticky-social a[class*="facebook"],
 #sticky-social a[class*="facebook"]:hover,
-#sticky-social a[class*="facebook"] span { background: #3b5998; }
+#sticky-social a[class*="facebook"] span { background: transparent; border-radius: 20%; }
 
 #sticky-social a[class*="twitter"],
 #sticky-social a[class*="twitter"]:hover,
-#sticky-social a[class*="twitter"] span { background: #00aced; }
+#sticky-social a[class*="twitter"] span { background: transparent; }
 
 #sticky-social a[class*="instagram"],
 #sticky-social a[class*="instagram"]:hover,
-#sticky-social a[class*="instagram"] span { background: #d43a87		; }  
+#sticky-social a[class*="instagram"] span { background: transparent;		border-radius: 20%; }  
 
 #sticky-social a[class*="whatsapp"],
 #sticky-social a[class*="whatsapp"]:hover,
-#sticky-social a[class*="whatsapp"] span { background: #2fb42f; }  
+#sticky-social a[class*="whatsapp"] span { background: transparent; border-radius: 20%; }  
 
 
 
 #sticky-social a[class*="youtube"],
 #sticky-social a[class*="youtube"]:hover,
-#sticky-social a[class*="youtube"] span { background: #ff1c00; }
+#sticky-social a[class*="youtube"] span { background:transparent; border-radius: 20%; }
 
 .buttons{
   border: 2px solid #9f8054;
   padding: 10px;
+}
+.facebook-img{
+  min-width: 30px;
+  height: 35px;
+}
+
+
+.side-navigation .menu ul li ul {
+    display: block !important;
+   padding: 6px 0 !important;
+}
+.side-navigation .menu ul li ul li {
+    display: block;
+    border-top: 1px solid #ffffff63 !important;
+    padding: 5px 10px !important ;
 }
 
 /* ACCORDION */
@@ -3668,6 +3683,33 @@ button[type=submit] {
 	.logos {padding-bottom:70px}
   #sticky-social {
     top: 300px;
+}
+.contact address {
+    margin-bottom: 20px !important;
+}
+    .contact {
+        padding: 20px 0 !important;
+    }
+    .contact .map .holder {
+   
+    transform: translate(5px, -35px) !important;
+}
+.contact .map .pattern-bg {
+  
+    left: 0;
+   
+}
+input[type=text] {
+   
+    border: 1px solid #b5b0b0 !important;
+   
+}
+textarea{
+   border: 1px solid #b5b0b0 !important;
+}
+.footer-bar{
+      margin-top: 20px !important;
+
 }
 }
 
