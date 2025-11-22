@@ -3735,4 +3735,8 @@ textarea{
 
 @media (max-width:430px) {
 	.footer-bar p br {display:none}
+      .slider-navigation {
+        bottom: 80px !important;
+        right: 5%;
+    }
 }
