@@ -3199,6 +3199,17 @@ button[type=submit] {
   color: #fff;
 }
 
+
+
+.slider .slider-container .swiper-slide .container h2 {
+  
+    margin-bottom: 30px !important;
+    margin-top: 22px !important;
+}
+
+
+
+
 /* RESPONSIVE MEDIUM  FIXES */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .intro figure .holder {
