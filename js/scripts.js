@@ -126,21 +126,24 @@
 	
 	
 	
-	/* GALLERY SLIDER */
-	var swiper = new Swiper('.gallery-container', {
-		slidesPerView: 'auto',
-      	spaceBetween: 0,
-		loop: true,
-		autoplay: {
-			delay: 4500,
-			disableOnInteraction: false,
-      	},
-      	pagination: {
-			el: '.gallery-pagination',
-			clickable: true,
-      },
-    });
-	
+	var swiper = new Swiper(".gallery-container", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+
+    /* Remove dots */
+    pagination: false,
+
+    /* Add next / prev arrows */
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 	
 	
 	
