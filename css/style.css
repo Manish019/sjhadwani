@@ -3271,6 +3271,7 @@ button[type=submit] {
 
 
 
+
 .slider .slider-container .swiper-slide .container h2 {
   
     margin-bottom: 30px !important;
@@ -3278,9 +3279,14 @@ button[type=submit] {
 }
 
 .testx-inner{
+
+  font-size: 25px;
   text-align:  center;
 }
 
+.para{
+  text-align: center;
+}
 
 /* RESPONSIVE MEDIUM  FIXES */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
