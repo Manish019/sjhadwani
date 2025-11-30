@@ -3277,7 +3277,9 @@ button[type=submit] {
     margin-top: 22px !important;
 }
 
-
+.testx-inner{
+  text-align:  center;
+}
 
 
 /* RESPONSIVE MEDIUM  FIXES */
