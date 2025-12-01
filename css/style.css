@@ -3924,6 +3924,11 @@ textarea{
     
     padding: 27px 30px !important;
 }
+.logos-about-slider {
+    /* padding: 18px 120px; */
+    background: #fff;
+    padding: 10px 0 100px;
+}
 
 }
 
@@ -3939,4 +3944,11 @@ textarea{
         bottom: 80px !important;
         right: 5%;
     }
+        .sales-team figure figcaption small {
+        font-size: 10px !important;
+    }
+    .logos-about-slider {
+    background: #fff;
+    padding: 10px 0 100px;
+}
 }
