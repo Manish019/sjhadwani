@@ -4016,7 +4016,13 @@ textarea{
     }
     .photo-gallery .gallery-filter li {
     margin-right: 25px !important;
-    font-size: 12px !important;
    
 }
+.photo-gallery .gallery-filter li a {
+  
+    font-size: 12px !important;
+}
+.footer-bar .inner p {
+        font-size: 12px !important;
+    }
   }
