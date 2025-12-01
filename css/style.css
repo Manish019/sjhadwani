@@ -4015,7 +4015,8 @@ textarea{
         font-size: 9vw;
     }
     .photo-gallery .gallery-filter li {
-    margin-right: 11px !important;
+    margin-right: 25px !important;
+    font-size: 12px !important;
    
 }
   }
