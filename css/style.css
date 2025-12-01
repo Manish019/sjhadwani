@@ -3952,3 +3952,13 @@ textarea{
     padding: 10px 0 100px;
 }
 }
+@media (max-width:360px) {
+	.footer-bar p br {display:none}
+      .slider-navigation {
+        bottom: 80px !important;
+        right: 5%;
+    }
+        .sales-team figure figcaption small {
+        font-size: 9px !important;
+    }
+  }
