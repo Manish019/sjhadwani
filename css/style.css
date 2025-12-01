@@ -4001,6 +4001,9 @@ textarea{
     margin-right: 11px !important;
    
 }
+.updateding-text{
+  font-size: 14px !important;
+}
 }
 @media (max-width:360px) {
 	.footer-bar p br {display:none}
