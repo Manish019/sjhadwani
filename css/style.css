@@ -2234,7 +2234,7 @@ button[type=submit] {
   font-weight: 600;
   font-size: 16px;
 }
-.about.facilities, .facilities.partners {padding:20px 0 150px}
+.about.facilities, .facilities.partners {padding:20px 0 10px}
 .facilities.partners figcaption {width:100%}
 
 .about.facilities figure figcaption h5 {margin-top:15px}
@@ -2534,7 +2534,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding:20px 0 150px;
+  padding:20px 0 10px;
 }
 .sales-team figure {
   width: 100%;
@@ -3287,6 +3287,77 @@ button[type=submit] {
 .para{
   text-align: center;
 }
+ /* force 6-per-row by making each slide 1/6 width */
+.logos-about-slider {
+  padding: 18px 0;
+  background: #fff;
+}
+
+.logos-about-slider .ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logos-about-slider .swiper {
+  width: 100%;
+}
+
+.logos-about-slider .swiper-wrapper {
+  align-items: center;
+}
+
+/* Default: 6 logos visible */
+.logos-about-slider .swiper-slide {
+  width: calc(100% / 6) !important;
+  box-sizing: border-box;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-about-slider .logo-box {
+  width: 100%;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logos-about-slider .logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .logos-about-slider .swiper-slide { width: calc(100% / 5) !important; }
+  .logos-about-slider .logo-box { height: 64px; }
+}
+
+@media (max-width: 992px) {
+  .logos-about-slider .swiper-slide { width: calc(100% / 4) !important; }
+  .logos-about-slider .logo-box { height: 56px; }
+}
+
+@media (max-width: 768px) {
+  .logos-about-slider .swiper-slide { width: calc(100% / 3) !important; }
+  .logos-about-slider .logo-box { height: 65px; }
+}
+
+@media (max-width: 576px) {
+  .logos-about-slider .swiper-slide { width: calc(100% / 2) !important; }
+  .logos-about-slider .logo-box { height: 60px; }
+}
+
+/* Social icons overlap fix */
+.logos-about-slider .fixed-social-icon {
+  z-index: 60;
+  pointer-events: auto;
+}
+
 
 /* RESPONSIVE MEDIUM  FIXES */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
@@ -3832,6 +3903,26 @@ textarea{
    
     font-size: 18px !important;
     margin-bottom: 20px !important;
+}
+.sales-team figure img {
+    width: 100% !important;
+}
+#nihal, #naresh {
+    margin-left: 0 !important;
+}
+.sales-team figure figcaption {
+        padding: 15px !important;
+        line-height: 6px !important;
+    }
+        .sales-team figure figcaption small {
+        font-size: 11px !important;
+    }
+    .sales-team {
+        padding: 17px 0 18px !important;
+    }
+    .facilities figure {
+    
+    padding: 27px 30px !important;
 }
 
 }
