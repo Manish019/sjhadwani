@@ -3787,13 +3787,13 @@ button[type=submit] {
 }
 
 /*# sourceMappingURL=style.css.map */
-@media only screen and (min-device-width: 1024px) {
+/* @media only screen and (min-device-width: 1024px) {
 
 .slider-navigation {
         bottom: 100px !important;
         right: 32% !important;
     }
-}
+} */
 @media only screen and (min-device-width: 820px) {
 
 .slider-navigation {
