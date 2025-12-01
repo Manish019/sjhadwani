@@ -3997,6 +3997,10 @@ textarea{
     background: #fff;
     padding: 10px 0 100px;
 }
+ .photo-gallery .gallery-filter li {
+    margin-right: 11px !important;
+   
+}
 }
 @media (max-width:360px) {
 	.footer-bar p br {display:none}
@@ -4010,4 +4014,8 @@ textarea{
     .page-header .container h1 {
         font-size: 9vw;
     }
+    .photo-gallery .gallery-filter li {
+    margin-right: 11px !important;
+   
+}
   }
