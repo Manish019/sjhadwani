@@ -3361,6 +3361,9 @@ button[type=submit] {
   display: block;
   pointer-events: none;
 }
+.ticker .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 
 /* Responsive breakpoints */
 @media (max-width: 1200px) {

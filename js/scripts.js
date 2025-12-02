@@ -238,8 +238,8 @@
   const SELECTOR_WRAPPER = '.swiper .swiper-wrapper';
   const SELECTOR_TICKER = '.ticker';
   const MIN_SLIDES = 12;      // minimum slides after cloning (prevents gaps)
-  const MAX_CLONE_ATTEMPTS = 50;
-  const SWIPER_SPEED = 6000;  // larger = slower
+  const MAX_CLONE_ATTEMPTS = 10;
+  const SWIPER_SPEED = 7000;  // larger = slower
 
   // Utility: wait for window load (images + resources)
   function onWindowLoad(fn) {
@@ -321,28 +321,23 @@
     }
 
     // Create Swiper instance for continuous marquee-like loop
-    const ticker = new Swiper(SELECTOR_TICKER, {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-      loop: true,
-      loopedSlides: totalSlides || undefined,
-      freeMode: true,
-      freeModeMomentum: false,
-      speed: SWIPER_SPEED,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false
-      },
-      allowTouchMove: true,
-      preloadImages: true,
-      updateOnImagesReady: true,
-      observer: true,
-      observeParents: true,
-      centeredSlides: false,
-      on: {
-        init() { this.update(); },
-      }
-    });
+   const ticker = new Swiper(SELECTOR_TICKER, {
+     slidesPerView: "auto",
+     spaceBetween: 0,
+     loop: true,
+     speed: SWIPER_SPEED,
+     autoplay: {
+       delay: 1, // 1ms = continuous motion
+       disableOnInteraction: false,
+     },
+     allowTouchMove: false, // STOP USER DRAG (big reason of jitter)
+     grabCursor: false,
+     waitForTransition: true,
+     observer: true,
+     observeParents: true,
+     centeredSlides: false,
+   });
+
 
     // Force update after images inside ticker fully load
     waitForImages(tickerEl, function () {
