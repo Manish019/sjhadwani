@@ -2248,10 +2248,10 @@ button[type=submit] {
 }
 .facilities figure {
   width: 100%;
-  float: left;
-  margin: 15px 0;
-  padding: 50px 30px;
-  box-shadow: 0 0 20px rgba(235, 207, 167, 0.4);
+    float: left;
+    margin: 15px 0;
+    padding: 30px 30px;
+    box-shadow: 0 0 20px rgb(147 145 143 / 40%);
 }
 .facilities figure img {
   height: 70px;
@@ -3984,6 +3984,9 @@ textarea{
     /* padding: 18px 120px; */
     background: #fff;
     padding: 10px 0 100px;
+}
+.apartment .property-infos .odometer, .apartment .property-infos .still{
+  font-size: 45px;
 }
 
 }
