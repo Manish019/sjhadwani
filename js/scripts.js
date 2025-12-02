@@ -1,111 +1,103 @@
 (function($) {
 	$(document).ready(function() {
-		"use strict";
-		
-		
-	// HOVER TOGGLE
-		$('.side-navigation .menu ul li a').on('click', function(e) {
-	  	$(this).parent().children('.side-navigation .menu ul li ul').slideToggle(300);
-        return true;
-	  	});
-		
-		
-		
-	// CONTACT FORM INPUT LABEL
-		function checkForInput(element) {
-			  const $label = $(element).siblings('span');
-			  if ($(element).val().length > 0) {
-				$label.addClass('label-up');
-			  } else {
-				$label.removeClass('label-up');
-			  }
-		}
+    ("use strict");
 
-		$('input, textarea').each(function(e) {
-			  checkForInput(this);
-		});
+    // HOVER TOGGLE
+    $(".side-navigation .menu ul li a").on("click", function (e) {
+      $(this)
+        .parent()
+        .children(".side-navigation .menu ul li ul")
+        .slideToggle(300);
+      return true;
+    });
 
-		$('input, textarea').on('change keyup', function(e) {
-			  checkForInput(this);  
-		});
-		
-		
-		
-	// TOOLTIP
-		$('[data-toggle="tooltip"]').tooltip()
-		
-		
-		
-	// PARALLAX
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 0,
-				responsive:true
-			});
-		
-		
-		
-	// DROPDOWN
-		$('.dropdown-toggle').dropdown()
-	
-	
-		
-	// HAMBURGER
-		$('.hamburger').on('click', function(e) {
-			$(this).toggleClass('open');
-			$('body').toggleClass('overflow');
-			$('.side-navigation').toggleClass('active');
-		});
-	
-	
-	
-	// DATA BACKGROUND IMAGE
-			var pageSection = $("*");
-			pageSection.each(function(indx){
-				if ($(this).attr("data-background")){
-					$(this).css("background-image", "url(" + $(this).data("background") + ")");
-				}
-			});
-		
-		
-		
-	// PAGE TRANSITION
-		$('body a').on('click', function(e) {
-			if (typeof $( this ).data('fancybox', 'filter') == 'undefined') {
-			e.preventDefault(); 	
-			var url = this.getAttribute("href"); 
-			if( url.indexOf('#') != -1 ) {
-			var hash = url.substring(url.indexOf('#'));
-				
-		
-			if( $('body ' + hash ).length != 0 ){
-			$('.transition-overlay').removeClass("active");
-			$(".hamburger").toggleClass("open");
-			$(".navigation-menu").removeClass("active");
+    // CONTACT FORM INPUT LABEL
+    function checkForInput(element) {
+      const $label = $(element).siblings("span");
+      if ($(element).val().length > 0) {
+        $label.addClass("label-up");
+      } else {
+        $label.removeClass("label-up");
+      }
+    }
 
+    $("input, textarea").each(function (e) {
+      checkForInput(this);
+    });
 
-			$('html, body').animate({
-			scrollTop: $(hash).offset().top
-			}, 1300);
+    $("input, textarea").on("change keyup", function (e) {
+      checkForInput(this);
+    });
 
-			}
-			}
-			else {
-			$('.transition-overlay').toggleClass("active");
-			setTimeout(function(){
-			window.location = url;
-			},1300); 
+    // TOOLTIP
+    $('[data-toggle="tooltip"]').tooltip();
 
-			}
-			}
-			});
-		
-			
-		
-		
-	
-		
-	});	
+    // PARALLAX
+    $.stellar({
+      horizontalScrolling: false,
+      verticalOffset: 0,
+      responsive: true,
+    });
+
+    // DROPDOWN
+    $(".dropdown-toggle").dropdown();
+
+    // HAMBURGER
+    $(".hamburger").on("click", function (e) {
+      $(this).toggleClass("open");
+      $("body").toggleClass("overflow");
+      $(".side-navigation").toggleClass("active");
+    });
+
+    // hash links (#team, #values, #partners...) par click hote hi sirf menu close karega
+    $('.side-navigation a[href^="#"]').on("click", function () {
+      // sidebar / hamburger ko normal state pe le aao
+      $(".hamburger").removeClass("open");
+      $("body").removeClass("overflow");
+      $(".side-navigation").removeClass("active");
+      // default anchor behavior chalne do → browser khud scroll karega
+    });
+
+    // DATA BACKGROUND IMAGE
+    var pageSection = $("*");
+    pageSection.each(function (indx) {
+      if ($(this).attr("data-background")) {
+        $(this).css(
+          "background-image",
+          "url(" + $(this).data("background") + ")"
+        );
+      }
+    });
+
+    // PAGE TRANSITION
+    $("body a").on("click", function (e) {
+      if (typeof $(this).data("fancybox", "filter") == "undefined") {
+        e.preventDefault();
+        var url = this.getAttribute("href");
+        if (url.indexOf("#") != -1) {
+          var hash = url.substring(url.indexOf("#"));
+
+          if ($("body " + hash).length != 0) {
+            $(".transition-overlay").removeClass("active");
+            $(".hamburger").toggleClass("open");
+            $(".navigation-menu").removeClass("active");
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1300
+            );
+          }
+        } else {
+          $(".transition-overlay").toggleClass("active");
+          setTimeout(function () {
+            window.location = url;
+          }, 1300);
+        }
+      }
+    });
+  });	
 		
 	
 	
