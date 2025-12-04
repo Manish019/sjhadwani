@@ -1523,6 +1523,7 @@ button[type=submit] {
 .benefits h6 {
   font-weight: 600;
   font-size: 14px;
+  margin-bottom: 30px;
 }
 .benefits .odometer {
   font-size: 50px;
@@ -1988,6 +1989,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 .apartment h2 {
   font-size: 4vw;
