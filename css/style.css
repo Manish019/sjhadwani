@@ -3152,6 +3152,24 @@ button[type=submit] {
   text-decoration: underline;
 }
 
+.odometer-digit {
+    margin-right: 0 !important;
+}
+.odometer,
+.extra {
+    margin: 0;
+    padding: 0;
+}
+
+.odometer {
+    display: inline-block;
+}
+
+.extra {
+    display: inline-block;
+    margin-left: 2px; /* adjust spacing as required */
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
@@ -3543,7 +3561,7 @@ button[type=submit] {
   }
 
   .sales-team figure figcaption h4 {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .sales-team figure figcaption small {
@@ -3876,7 +3894,7 @@ button[type=submit] {
 	.quote.footer-bar .inner figure img {margin:-120px 0 0 calc(50% - 116px)}
 	#mobile {display:block}
 	#desk {display:none}
-	#sandeep p {margin-top:120px}
+	#sandeep p {margin-top:40px}
 	
 	.footer-bar .col-lg-6 {margin:20px 0}
 	.footer-bar .inner figure {margin-bottom:40px; width:60px}
@@ -4019,6 +4037,9 @@ textarea{
 .updateding-text{
   font-size: 14px !important;
 }
+.footer-bar .inner p {
+        font-size: 11px !important;
+    }
 }
 @media (max-width:360px) {
 	.footer-bar p br {display:none}
@@ -4040,7 +4061,8 @@ textarea{
   
     font-size: 12px !important;
 }
+
 .footer-bar .inner p {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
   }
