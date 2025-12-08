@@ -3392,6 +3392,8 @@ button[type=submit] {
   transition-timing-function: linear !important;
 }
 
+
+
 /* Responsive breakpoints */
 @media (max-width: 1200px) {
   .logos-about-slider .swiper-slide { width: calc(100% / 5) !important; }
@@ -4060,6 +4062,9 @@ textarea{
 .footer-bar .inner p {
         font-size: 12px !important;
     }
+     .footer-bar .inner h3 {
+    font-size: 13px;
+}
 }
 @media (max-width:360px) {
 	.footer-bar p br {display:none}
@@ -4085,4 +4090,10 @@ textarea{
 .footer-bar .inner p {
         font-size: 10px !important;
     }
+    .footer-bar .inner h3 {
+    font-size: 12px;
+}
   }
+
+
+  
