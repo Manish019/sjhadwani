@@ -4008,6 +4008,18 @@ textarea{
 .apartment .property-infos .odometer, .apartment .property-infos .still{
   font-size: 45px;
 }
+.quote.footer-bar .inner figure img {
+        margin: -152px 0 0 calc(50% - 118px);
+    }
+        #sandeep p {
+        margin-top: 74px;
+                font-size: 15px !important;
+
+    }
+        .photo-gallery {
+        padding: 10px 0;
+    }
+
 
 }
 
@@ -4038,7 +4050,7 @@ textarea{
   font-size: 14px !important;
 }
 .footer-bar .inner p {
-        font-size: 11px !important;
+        font-size: 12px !important;
     }
 }
 @media (max-width:360px) {
