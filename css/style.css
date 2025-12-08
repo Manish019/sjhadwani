@@ -3503,7 +3503,7 @@ button[type=submit] {
   }
 
   .photo-gallery {
-    padding: 80px 0;
+    padding: 20px 0;
   }
 
   .photo-gallery .gallery li {
@@ -3518,6 +3518,10 @@ button[type=submit] {
     width: 100%;
     margin-left: 0;
     margin-top: 50px;
+  }
+
+ #sandeep p{
+    font-size: 25px !important;
   }
 
  /* .apartment {
@@ -3894,7 +3898,11 @@ button[type=submit] {
 	.quote.footer-bar .inner figure img {margin:-120px 0 0 calc(50% - 116px)}
 	#mobile {display:block}
 	#desk {display:none}
-	#sandeep p {margin-top:40px}
+	#sandeep p {
+    margin-top:120px;
+    font-size: 25px;
+  
+  }
 	
 	.footer-bar .col-lg-6 {margin:20px 0}
 	.footer-bar .inner figure {margin-bottom:40px; width:60px}
